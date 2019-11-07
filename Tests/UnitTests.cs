@@ -31,7 +31,7 @@ namespace TravisCILab
         }
 
         // Implement 3 tests per operation, following a similar pattern as above
-        [Test]
+                [Test]
         public void Subtract_Valid()
         {
             Assert.AreEqual(-1, Program.Subtract("1", "2"));
@@ -84,7 +84,7 @@ namespace TravisCILab
         {
             Assert.AreEqual(0.5, Program.Divide("1", "2"));
             Assert.AreEqual(1.5, Program.Divide("3", "2"));
-            Assert.AreEqual((double)5 / (double)7, Program.Divide("5", "7"));
+            Assert.AreEqual((double)5/(double)7, Program.Divide("5", "7"));
         }
 
         [Test]
